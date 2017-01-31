@@ -1,0 +1,103 @@
+body{
+  background: #343d46;
+  color: #63717f;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.mainContainer{
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+h2{
+  padding: 10px;
+}
+p{
+  font-size: 1.5em;
+  padding: 10px;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+.searchResult{
+  
+  border-radius: 15px;
+  background-color: #2b303b;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.searchResult:hover{
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+/* Search bar begin */
+.box{
+  margin: 30px auto;
+  width: 300px;
+  height:50px;
+}
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 1.4em;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  border-radius: 5px;
+  transition: background .55s ease;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 15px;
+  z-index: 1;
+  color: #4f5b66;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+/* Search bar end */
+
+/* Begin utility classes */
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+/* End utility classes */
